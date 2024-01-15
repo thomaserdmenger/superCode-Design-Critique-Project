@@ -3,6 +3,13 @@
   src: url(./assets/fonts/Inter-VariableFont.ttf);
 }
 
+:root {
+  --color-black: #2b2c2e;
+  --color-gray: #9fa2a7;
+  --color-white: #fff;
+  --transition: 0.5s;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,5 +22,53 @@ img {
 
 .wrapper {
   min-height: 100vh;
+  padding: 2vw 10vw;
+
   font-family: Inter, sans-serif;
+  color: var(--color-black);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ! Header */
+
+header {
+  margin-bottom: 6rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header nav div {
+  display: flex;
+  gap: 1.5vw;
+}
+
+header nav div a {
+  font-size: 0.875rem;
+}
+
+header nav > a:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header nav > a:nth-of-type(2) {
+  font-size: 1.0625rem;
+  padding: 8px 60px;
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+header nav > a:nth-of-type(2):hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
