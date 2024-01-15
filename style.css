@@ -258,3 +258,37 @@ header nav > a:nth-of-type(2):hover {
   text-align: left;
   color: var(--color-gray-light);
 }
+
+/* ! Footer */
+
+footer {
+  padding: var(--padding-main);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer h4 {
+  margin-bottom: 2.75rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 1vw;
+}
+
+.footer-bottom img {
+  width: 5vw;
+}
+
+.footer-bottom p {
+  color: var(--color-gray-light);
+  font-size: 1rem;
+}
+
+.footer-bottom a {
+  color: var(--color-black);
+}
