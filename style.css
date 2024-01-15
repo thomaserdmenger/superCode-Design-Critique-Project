@@ -6,7 +6,6 @@
 :root {
   --color-black: #2b2c2e;
   --color-gray-light: #9fa2a7;
-  --color-gray-dark: #848689;
   --color-white: #fff;
   --transition: 0.5s;
   --padding-main: 0 10vw;
@@ -41,6 +40,14 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3.125rem;
+}
+
+h4 {
+  font-size: 3rem;
 }
 
 h5 {
@@ -167,5 +174,44 @@ header nav > a:nth-of-type(2):hover {
 .deliverables-item p {
   font-size: 1.3125rem;
   line-height: 1.625rem;
-  color: var(--color-gray-dark);
+  color: var(--color-gray-light);
+}
+
+/* ! Works Section */
+
+.works-section {
+  margin: var(--padding-main);
+  background: url(./assets/images/home_how_it_works.png),
+    var(--color-gray-light);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-bottom: 8rem;
+  padding: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.works-section article {
+  padding-right: 38vw;
+}
+
+.works-section article:nth-of-type(1) h3,
+.works-section article:nth-of-type(2) h4 {
+  margin-bottom: 1rem;
+}
+
+.works-section article:nth-of-type(1) ol {
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.works-section article:nth-of-type(1) li,
+.works-section article:nth-of-type(2) p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
